@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2013-01-21                                                    -->
+<!-- Copyright  : Copyright (C) 2013 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : site/views/homeinfo/tmpl/default.xml                          -->
+<!-- Version    : 0.5.3                                                         -->
+<!-- Author     : Bjorn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<metadata>
+	<layout title="COM_HOMEINFO_SHOWERRORS_VIEW_DEFAULT_TITLE">
+		<message>COM_HOMEINFO_SHOWERRORS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_homeinfo/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="integer"
+				label="COM_HOMEINFO_SHOWERRORS_FIELD_NUMBER_OF_ELEMENTS_LABEL"
+				description="COM_HOMEINFO_SHOWERRORS_FIELD_NUMBER_OF_ELEMENTS_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

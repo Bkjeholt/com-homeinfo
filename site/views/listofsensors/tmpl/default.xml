@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2013-05-28                                                    -->
+<!-- Copyright  : Copyright (C) 2013 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : site/views/listofsensors/tmpl/default.xml                     -->
+<!-- Version    : 0.6.3                                                         -->
+<!-- Author     : Bjorn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<metadata>
+	<layout title="COM_HOMEINFO_LIST_OF_SENSORS_AND_GROUPS_VIEW_DEFAULT_TITLE">
+		<message>COM_HOMEINFO_LIST_OF_SENSORS_AND_GROUPS_VIEW_DEFAULT_DESC</message>
+	</layout>
+</metadata>

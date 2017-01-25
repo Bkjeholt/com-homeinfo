@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2012-11-02                                                    -->
+<!-- Copyright  : Copyright (C) 2012 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+
+<!-- File       : admin/models/forms/adminsensor.xml                            -->
+<!-- Version    : 0.3.7                                                         -->
+<!-- Author     : Björn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<form name="addsensor">
+	<fieldset name="addsensor" 
+	          addfieldpath="/administrator/components/com_homeinfo/models/fields">
+
+		<field
+            name="sensorname"
+            type="text"
+			description="COM_HOMEINFO_FORM_ADDSENSOR_NAME_DESC"
+			label="COM_HOMEINFO_FORM_ADDSENSOR_NAME_LABEL"
+			required="true"
+			size="16"
+		></field>
+
+		<field
+            name="sensortype"
+            type="radio"
+			description="COM_HOMEINFO_FORM_ADDSENSOR_TYPE_DESC"
+			label="COM_HOMEINFO_FORM_ADDSENSOR_TYPE_LABEL"
+			required="true">
+			<option value="sample">Analog sensor (i.e. temperature sensor or power sensor)\n</option>
+			<option value="ackumulated">Ackumulative counter sensor\n</option>
+			<option value="boolean">Binary sensor\n</option></field>
+
+		<field
+            name="sensorunit"
+            type="unitselect"
+            multiple="false"
+            size="1"
+			description="COM_HOMEINFO_FORM_ADDSENSOR_UNIT_DESC"
+			label="COM_HOMEINFO_FORM_ADDSENSOR_UNIT_LABEL"
+			required="true"
+		/>
+
+	</fieldset>
+</form>

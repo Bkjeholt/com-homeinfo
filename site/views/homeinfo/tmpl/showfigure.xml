@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2012-09-24                                                    -->
+<!-- Copyright  : Copyright (C) 2012 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : site/views/homeinfo/tmpl/default.xml                          -->
+<!-- Version    : 0.2.0                                                         -->
+<!-- Author     : Björn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<metadata>
+	<layout title="COM_HOMEINFO_HOMEINFO_VIEW_SHOWFIGURE_TITLE">
+		<message>COM_HOMEINFO_HOMEINFO_VIEW_SHOWFIGURE_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_homeinfo/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="figure_id"
+				type="showfigure"
+				label="COM_HOMEINFO_HOMEINFO_FIELD_FIGURE_NAME_LABEL"
+				description="COM_HOMEINFO_HOMEINFO_FIELD_FIGURE_NAME_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

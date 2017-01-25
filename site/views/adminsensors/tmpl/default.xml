@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2013-02-01                                                    -->
+<!-- Copyright  : Copyright (C) 2012 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : site/views/adminsensors/tmpl/default.xml                      -->
+<!-- Version    : 0.5.6                                                         -->
+<!-- Author     : Bjorn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<metadata>
+	<layout title="COM_HOMEINFO_ADMINSENSORS_VIEW_DEFAULT_TITLE">
+		<message>COM_HOMEINFO_ADMINSENSORS_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/components/com_homeinfo/models/fields"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="sensorselect"
+				label="COM_HOMEINFO_HOMEINFO_FIELD_OUTDOOR_TEMP_SENSOR_NAME_LABEL"
+				description="COM_HOMEINFO_HOMEINFO_FIELD_OUTDOOR_TEMP_SENSOR_NAME_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

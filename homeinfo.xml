@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : See below                                                     -->
+<!-- Copyright  : Copyright (C) 2013 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : homeinfo.xml                                                  -->
+<!-- Version    : See below                                                     -->
+<!-- Author     : Björn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>com_homeinfo</name>
+	<creationDate>2013-05-28</creationDate>
+	<author>Björn Kjeholt</author>
+	<authorEmail>dev@kjeholt.se</authorEmail>
+	<authorUrl>http://dev.kjeholt.se</authorUrl>
+	<copyright>Copyright (C) 2013 Kjeholt Engineering. All rights reserved.</copyright>
+	<license>----</license>
+	
+	<version>0.6.3w</version>
+	
+	<description>The home information control component</description>
+	
+	<scriptfile>installer_script.php</scriptfile>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.utf8.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>homeinfo.php</filename>
+		<filename>index.html</filename>
+
+		<folder>controllers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<media destination="com_homeinfo" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>maps</folder>
+		<folder>js</folder>
+	</media>
+	
+	<administration>
+		<menu img="../media/com_helloworld/images/tux-16x16.png">Home Information control adminstration!</menu>
+	
+		<files folder="admin">
+			<filename>homeinfo.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>helpers</folder>
+			<folder>includes</folder>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>cli</folder>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_homeinfo.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_homeinfo.sys.ini</language>
+		</languages>
+	</administration>	
+	
+<!--	<updateservers>														-->
+<!--		<server type="extension" 										-->
+<!--		        priority="1" 											-->
+<!--		        name="Home information update server">					-->
+<!--		        	http://dev.kjeholt.se/update/homeinfo-update.xml	-->
+<!--		</server>														-->
+<!--	</updateservers>													-->
+</extension>

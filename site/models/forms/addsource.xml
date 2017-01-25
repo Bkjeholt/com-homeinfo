@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2013-02-01                                                    -->
+<!-- Copyright  : Copyright (C) 2013 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- File       : admin/models/forms/adminsource.xml                            -->
+<!-- Version    : 0.5.6                                                         -->
+<!-- Author     : Björn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<form name="addsource">
+	<fieldset name="addsource" 
+	          addfieldpath="/administrator/components/com_homeinfo/models/fields">
+
+		<field
+            name="sourcename"
+            type="text"
+			description="COM_HOMEINFO_FORM_ADDSOURCE_NAME_DESC"
+			label="COM_HOMEINFO_FORM_ADDSOURCE_NAME_LABEL"
+			required="true"
+			size="16"/>
+
+		<field
+            name="sourceurl"
+            type="text"
+			description="COM_HOMEINFO_FORM_ADDSOURCE_URL_DESC"
+			label="COM_HOMEINFO_FORM_ADDSOURCE_URL_LABEL"
+			required="true"
+			size="64"/>
+
+		<field
+            name="sourcekey"
+            type="text"
+			description="COM_HOMEINFO_FORM_ADDSOURCE_KEY_DESC"
+			label="COM_HOMEINFO_FORM_ADDSOURCE_KEY_LABEL"
+			required="true"
+			size="16"/>
+
+	</fieldset>
+</form>

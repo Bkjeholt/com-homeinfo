@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ========================================================================== -->
+<!-- Product    : Home information                                              -->
+<!-- Date       : 2012-10-17                                                    -->
+<!-- Copyright  : Copyright (C) 2012 Kjeholt Engineering. All rights reserved.  -->
+<!-- Contact    : dev@kjeholt.se                                                -->
+<!-- Url        : http://dev.kjeholt.se                                         -->
+<!-- Licence    : ...                                                           -->
+<!-- ========================================================================== -->
+<!-- File       : site/views/showtempgraph/tmpl/default.xml                     -->
+<!-- Version    : 0.3.4                                                         -->
+<!-- Author     : Björn Kjeholt                                                 -->
+<!-- ========================================================================== -->
+
+<metadata>
+	<layout title="COM_HOMEINFO_SHOWTEMPGRAPH_VIEW_DEFAULT_TITLE">
+		<message>COM_HOMEINFO_SHOWTEMPGRAPH_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_homeinfo/models/fields" >
+		<fieldset name="request">
+			<field
+				name="sensor_id"
+				type="SensorSelect"
+				label="COM_HOMEINFO_SHOWTEMPGRAPH_FIELD_DEFAULT_SENSOR_LABEL"
+				description="COM_HOMEINFO_SHOWTEMPGRAPH_FIELD_DEFAULT_SENSOR_DESC" />
+			<field
+				name="number_of_days"
+				type="text"
+				label="COM_HOMEINFO_SHOWTEMPGRAPH_FIELD_DEFAULT_NODAYS_LABEL"
+				description="COM_HOMEINFO_SHOWTEMPGRAPH_FIELD_DEFAULT_NODAYS_DESC" />
+		</fieldset>
+	</fields>
+</metadata>
